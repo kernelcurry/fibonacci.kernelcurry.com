@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', ['as' => 'default.index', 'uses' => 'HomeController@index']);
+Route::get('/{term}', ['as' => 'default.fibonacci', 'uses' => 'HomeController@fibonacci']);

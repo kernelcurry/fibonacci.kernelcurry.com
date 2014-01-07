@@ -15,9 +15,14 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function index()
 	{
-		return View::make('hello');
+		$this->layout->content = View::make('default.index');
+	}
+
+	public function fibonacci($term)
+	{
+		$this->layout->content = View::make('fibonacci.index', compact('term'));
 	}
 
 }
