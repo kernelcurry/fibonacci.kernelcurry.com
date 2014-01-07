@@ -24,7 +24,8 @@ class HomeController extends BaseController {
 
 	public function fibonacci($term)
 	{
-		$this->layout->content = View::make('fibonacci.index', compact('term'));
+		$number = 123123123;
+		$this->layout->content = View::make('fibonacci.index', compact('number'));
 	}
 
 }
