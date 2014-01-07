@@ -24,7 +24,7 @@ class HomeController extends BaseController {
 
 	public function fibonacci($term)
 	{
-		if (is_int($term))
+		if (ctype_digit($term))
 		{
 			if ($term >= 0 && $term <= 1000000)
 			{
@@ -38,7 +38,7 @@ class HomeController extends BaseController {
 		}
 		else
 		{
-
+			$this->layout->content = View::make('default.invalid');
 		}
 	}
 
