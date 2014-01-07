@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<div class="container">
-			@yield('content')
+			<h1 class="text-center">Fibonacci Sequence Term Generator</h1>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
 					<form id="send">
@@ -29,6 +29,7 @@
 					</form>
 				</div>
 			</div>
+			@yield('content')
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function(){
