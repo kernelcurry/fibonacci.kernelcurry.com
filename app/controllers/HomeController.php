@@ -24,7 +24,8 @@ class HomeController extends BaseController {
 
 	public function fibonacci($term)
 	{
-		$this->layout->content = View::make('default.fibonacci', compact('term'));
+		$number = exec(app_path('library/fibonacci').' '.$term);
+		$this->layout->content = View::make('default.fibonacci', compact('term', 'number'));
 	}
 
 }
