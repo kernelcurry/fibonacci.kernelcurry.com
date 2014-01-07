@@ -24,7 +24,7 @@ class HomeController extends BaseController {
 
 	public function fibonacci($term)
 	{
-		if ($term > -1 && $term < 1000000)
+		if ($term >= 0 && $term <= 1000000)
 		{
 			$number = exec(app_path('library/fibonacci-c/bin/fibonacci').' '.$term);
 			$this->layout->content = View::make('default.fibonacci', compact('term', 'number'));
