@@ -16,18 +16,9 @@
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=360986720695289";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
 		<div class="container">
 			<h1 class="text-center">Fibonacci Sequence Term Generator</h1>
-			<p class="text-center">
+			<p class="text-center social">
 				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fibonacci.kernelcurry.com" data-text="Fibonacci Sequence Term Generator" data-via="kernelcurry">Tweet</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 				<div id="fb-root"></div>
@@ -51,10 +42,13 @@
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				// form submission
 				$('#send').submit(function(e){
 					window.location.href = $('#term').val();
 					e.preventDefault();
 				});
+				// move facebook button
+				$('.fb-like').appendTo('.social');
 			});
 		</script>
 	</body>
