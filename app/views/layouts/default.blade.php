@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="canonical" href="http://kernelcurry.com/blog/why-you-should-use-c-with-php/" />
 
 		<title>KernelCurry - Fibonacci Sequence Term Generator</title>
 

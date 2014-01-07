@@ -2,3 +2,7 @@ body {
 	color: #7c868d;
 	background-color: #1d252c;
 }
+
+form {
+	margin: 20px 0;
+}
