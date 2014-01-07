@@ -18,6 +18,11 @@
 	<body>
 		<div class="container">
 			<h1 class="text-center">Fibonacci Sequence Term Generator</h1>
+			<p class="text-center">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fibonacci.kernelcurry.com" data-text="Fibonacci Sequence Term Generator" data-via="kernelcurry">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</p>
+			<p class="text-center"><b>Authors Site:</b> <a href="http://kernelcurry.com">kernelcurry.com</a> <b>Source Code:</b> <a href="https://github.com/kernelcurry/fibonacci.kernelcurry.com">github</a></p>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
 					<form id="send">
