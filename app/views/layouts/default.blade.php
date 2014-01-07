@@ -17,6 +17,26 @@
 	<body>
 		<div class="container">
 			@yield('content')
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<form id="send">
+						<div class="input-group">
+							<input id="term" type="text" class="form-control">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Get Term</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#send').submit(function(e){
+					window.location.href = $('#term').val();
+					e.preventDefault();
+				});
+			});
+		</script>
 	</body>
 </html>
