@@ -11,7 +11,7 @@ class BaseController extends Controller {
 	{
 		if ( ! is_null($this->layout))
 		{
-			$this->layout = 'layouts.default';
+			$this->layout = View::make($this->layout);
 		}
 	}
 
