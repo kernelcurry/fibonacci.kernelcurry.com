@@ -15,7 +15,7 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	protected $layout = 'layouts.default';
+	protected $layout = 'layouts.master';
 
 	public function index()
 	{
@@ -24,8 +24,7 @@ class HomeController extends BaseController {
 
 	public function fibonacci($term)
 	{
-		$number = 123123123;
-		$this->layout->content = View::make('fibonacci.index', compact('number'));
+		$this->layout->content = View::make('default.fibonacci', compact('term'));
 	}
 
 }
