@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', ['as' => 'default.index', 'uses' => 'HomeController@index']);
-Route::get('/{term}', ['as' => 'default.fibonacci', 'uses' => 'HomeController@fibonacci']);
+Route::get('/', array('as' => 'default.index', 'uses' => 'HomeController@index'));
+Route::get('/{term}', array('as' => 'default.fibonacci', 'uses' => 'HomeController@fibonacci'));
